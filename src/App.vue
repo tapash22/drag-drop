@@ -10,10 +10,14 @@
         {{ item.title }}
       </div>
     </div>
+    <div>
+      <CustomEditor />
+    </div>
   </div>
 </template>
 
 <script>
+import CustomEditor from './components/CustomEditor.vue'
 export default {
   data() {
     return {
@@ -34,6 +38,9 @@ export default {
       },
       ],
     }
+  },
+  components:{
+    CustomEditor
   },
 
   computed: {
